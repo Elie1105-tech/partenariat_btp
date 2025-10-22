@@ -114,8 +114,80 @@ nav a:hover::after, nav a.active::after {
     width: 100%;
 }
 
+.main-nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--bleu-acier);
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -240px;
+    width: 300px;
+    height: 100vh;
+    background: var(--blanc);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+.nav-menu.active li {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.nav-menu.active a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.nav-menu.active a:hover {
+    background: var(--gris-clair);
+}
+
 .page-hero {
-    margin-top: 100px;
     height: 60vh;
     background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232C3E50" width="1200" height="600"/><g opacity="0.1"><rect fill="%23D4AF37" x="100" y="200" width="150" height="200"/><rect fill="%23D4AF37" x="400" y="150" width="120" height="250"/><rect fill="%23D4AF37" x="700" y="250" width="180" height="180"/><rect fill="%23D4AF37" x="1000" y="180" width="140" height="220"/></g></svg>');
@@ -661,186 +733,205 @@ footer {
         gap: 2rem;
     }
 
-    .stat-item::after {
-        display: none;
-    }
+.stat-item::after {
+display: none;
+}
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0.8rem 1rem;
-    }
+.header-container {
+flex-direction: row;
+gap: 1rem;
+justify-content: space-between;
+align-items: center;
+padding: 0.8rem 1rem;
+}
 
-    .logos {
-        gap: 1rem;
-    }
+.menu-toggle {
+display: flex;
+}
 
-    .logo-box {
-        width: 60px;
-        height: 60px;
-        font-size: 1.2rem;
-    }
+.nav-menu {
+display: none;
+}
 
-    .logo-separator {
-        height: 40px;
-    }
+.nav-menu.active {
+display: flex;
+}
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.8rem;
-    }
+.logos {
+order: 1;
+gap: 1rem;
+}
 
-    nav a {
-        font-size: 0.85rem;
-    }
+.logo-box {
+    width: 90px;
+    height: 90px;
+}
 
-    .page-hero {
-        height: 50vh;
-        background-attachment: scroll;
-    }
+.logo-separator {
+height: 40px;
+}
 
-    .hero-content h1 {
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
+.main-nav {
+order: 2;
+width: auto;
+}
 
-    .hero-content p {
-        font-size: 1rem;
-    }
+nav ul {
+flex-wrap: wrap;
+justify-content: center;
+gap: 0.8rem;
+}
 
-    .stats-section {
-        padding: 2rem 1rem;
-    }
+nav a {
+font-size: 0.85rem;
+}
 
-    .stats-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.page-hero {
+height: 50vh;
+background-attachment: scroll;
+}
 
-    .stat-number {
-        font-size: 2.5rem;
-    }
+.hero-content h1 {
+font-size: 2rem;
+letter-spacing: 2px;
+}
 
-    .section {
-        padding: 3rem 1rem;
-    }
+.hero-content p {
+font-size: 1rem;
+}
 
-    .section-title {
-        font-size: 2rem;
-    }
+.stats-section {
+padding: 2rem 1rem;
+}
 
-    .section-subtitle {
-        font-size: 1rem;
-    }
+.stats-container {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.stat-number {
+font-size: 2.5rem;
+}
 
-    .project-image {
-        height: 250px;
-    }
+.section {
+padding: 3rem 1rem;
+}
 
-    .project-icon {
-        font-size: 4rem;
-    }
+.section-title {
+font-size: 2rem;
+}
 
-    .project-info {
-        padding: 1.5rem;
-    }
+.section-subtitle {
+font-size: 1rem;
+}
 
-    .project-title {
-        font-size: 1.3rem;
-    }
+.portfolio-grid {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
 
-    .project-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-        font-size: 0.85rem;
-    }
+.project-image {
+height: 250px;
+}
 
-    .carousel-section {
-        padding: 4rem 1rem;
-    }
+.project-icon {
+font-size: 4rem;
+}
 
-    .carousel-header h2 {
-        font-size: 2rem;
-    }
+.project-info {
+padding: 1.5rem;
+}
 
-    .carousel-header p {
-        font-size: 1rem;
-    }
+.project-title {
+font-size: 1.3rem;
+}
 
-    .slide-image {
-        height: 350px;
-    }
+.project-meta {
+flex-direction: column;
+gap: 0.5rem;
+font-size: 0.85rem;
+}
 
-    .slide-icon {
-        font-size: 8rem;
-    }
+.carousel-section {
+padding: 4rem 1rem;
+}
 
-    .slide-caption {
-        padding: 2rem 1.5rem;
-    }
+.carousel-header h2 {
+font-size: 2rem;
+}
 
-    .slide-caption h3 {
-        font-size: 1.6rem;
-    }
+.carousel-header p {
+font-size: 1rem;
+}
 
-    .slide-caption p {
-        font-size: 0.95rem;
-    }
+.slide-image {
+height: 350px;
+}
 
-    .carousel-controls {
-        padding: 0 0.5rem;
-    }
+.slide-icon {
+font-size: 8rem;
+}
 
-    .carousel-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
+.slide-caption {
+padding: 2rem 1.5rem;
+}
 
-    .indicator {
-        width: 10px;
-        height: 10px;
-    }
+.slide-caption h3 {
+font-size: 1.6rem;
+}
 
-    .indicator.active {
-        width: 32px;
-    }
+.slide-caption p {
+font-size: 0.95rem;
+}
 
-    .cta-section {
-        padding: 3rem 1.5rem;
-    }
+.carousel-controls {
+padding: 0 0.5rem;
+}
 
-    .cta-section h2 {
-        font-size: 2rem;
-    }
+.carousel-btn {
+width: 50px;
+height: 50px;
+font-size: 1.5rem;
+}
 
-    .cta-section p {
-        font-size: 1.1rem;
-    }
+.indicator {
+width: 10px;
+height: 10px;
+}
 
-    .cta-button {
-        padding: 1.1rem 2.5rem;
-        font-size: 0.95rem;
-    }
+.indicator.active {
+width: 32px;
+}
 
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+.cta-section {
+padding: 3rem 1.5rem;
+}
+
+.cta-section h2 {
+font-size: 2rem;
+}
+
+.cta-section p {
+font-size: 1.1rem;
+}
+
+.cta-button {
+padding: 1.1rem 2.5rem;
+font-size: 0.95rem;
+}
+
+.footer-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
 }
 
 @media (max-width: 480px) {
-    .page-hero {
-        height: 40vh;
-    }
+.page-hero {
+height: 40vh;
+}
 
     .hero-content h1 {
         font-size: 1.6rem;

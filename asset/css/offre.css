@@ -117,8 +117,80 @@ nav a.active::after {
     width: 100%;
 }
 
+.main-nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--bleu-acier);
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -240px;
+    width: 300px;
+    height: 100vh;
+    background: var(--blanc);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+}
+
+.nav-menu.active li {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.nav-menu.active a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.nav-menu.active a:hover {
+    background: var(--gris-clair);
+}
+
 .page-hero {
-    margin-top: 100px;
     height: 50vh;
     background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%232C3E50" width="1200" height="400"/><circle fill="%23D4AF37" opacity="0.1" cx="200" cy="200" r="100"/><circle fill="%23D4AF37" opacity="0.15" cx="600" cy="150" r="120"/><circle fill="%23D4AF37" opacity="0.12" cx="1000" cy="250" r="90"/></svg>');
@@ -550,8 +622,42 @@ footer {
 
 @media (max-width: 968px) {
     .header-container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .logos {
+        order: 1;
+        gap: 1rem;
+    }
+
+    .logo-box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .logo-separator {
+        height: 40px;
+    }
+
+    .main-nav {
+        order: 2;
+        width: auto;
     }
 
     nav ul {
