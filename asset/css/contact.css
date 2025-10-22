@@ -187,7 +187,7 @@ nav a.active::after {
 }
 
 .page-hero {
-    /* margin-top: 100px; */
+    margin-top: 100px;
     height: 50vh;
     background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%232C3E50" width="1200" height="400"/><path fill="%23D4AF37" opacity="0.1" d="M0 300 Q300 250 600 300 T1200 300 V400 H0 Z"/></svg>');
@@ -426,7 +426,12 @@ nav a.active::after {
 
 .social-link:hover {
     background: var(--dore);
+    color: var(--blanc);
     transform: translateY(-3px);
+}
+
+.social-link i:hover{
+    color: var(--blanc);
 }
 
 .map-section {
