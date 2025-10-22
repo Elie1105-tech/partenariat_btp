@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Partenariat BTP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/contact.css">
+    <link rel="stylesheet" href="./asset/fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logos">
+                <div class="logo-box"><img src="./asset/images/logo1.jpg" alt=""></div>
+                <div class="logo-separator"></div>
+                <div class="logo-box"><img src="./asset/images/logo2.jpg" alt=""></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="domaines.html">Domaines</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div>
+            <h1>Contactez-Nous</h1>
+            <p>Notre équipe est à votre écoute pour concrétiser vos projets</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-intro">
+                <h2>Parlons de Votre Projet</h2>
+                <p>
+                    Vous avez un projet de construction ? Une question sur nos services ? Notre équipe d'experts est disponible pour vous accompagner et vous conseiller. Remplissez le formulaire ci-dessous ou contactez-nous directement.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2 class="form-title">Formulaire de Contact</h2>
+                    <div class="success-message" id="successMessage">
+                        ✓ Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom complet <span>*</span></label>
+                                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="entreprise">Entreprise</label>
+                                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone <span>*</span></label>
+                                <input type="tel" id="telephone" name="telephone" required placeholder="+261 34 XX XXX XX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet de votre demande <span>*</span></label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="rendez-vous">Prise de rendez-vous</option>
+                                <option value="projet">Nouveau projet</option>
+                                <option value="partenariat">Partenariat</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message <span>*</span></label>
+                            <textarea id="message" name="message" required placeholder="Décrivez votre projet ou votre demande en détail..."></textarea>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">J'accepte de recevoir la newsletter et les actualités</label>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="rgpd" name="rgpd" required>
+                            <label for="rgpd">J'accepte que mes données soient utilisées pour me recontacter <span>*</span></label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa fa-phone-alt" aria-hidden="true"></i></div>
+                        <h3>Téléphone</h3>
+                        <p><strong>Entreprise 1:</strong></p>
+                        <p><a href="tel:+261341234567">+261 34 12 345 67</a></p>
+                        <p><strong>Entreprise 2:</strong></p>
+                        <p><a href="tel:+261347654321">+261 34 76 543 21</a></p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem;">Lundi - Vendredi: 8h - 17h<br>Samedi: 8h - 12h</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <h3>Email</h3>
+                        <p><strong>Contact général:</strong></p>
+                        <p><a href="mailto:contact@partenariat-btp.mg">contact@partenariat-btp.mg</a></p>
+                        <p><strong>Devis & projets:</strong></p>
+                        <p><a href="mailto:devis@partenariat-btp.mg">devis@partenariat-btp.mg</a></p>
+                        <p><strong>Support client:</strong></p>
+                        <p><a href="mailto:support@partenariat-btp.mg">support@partenariat-btp.mg</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-map-marked-alt    "></i></div>
+                        <h3>Adresse</h3>
+                        <p><strong>Siège social:</strong></p>
+                        <p>Lot II J 125 Bis Ambohijatovo<br>Antananarivo 101<br>Madagascar</p>
+                        <p style="margin-top: 1rem;"><strong>Bureau secondaire:</strong></p>
+                        <p>Ankorondrano, Face Hôtel Panorama<br>Antananarivo, Madagascar</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon" style="color: gray;">🌐</div>
+                        <h3>Réseaux Sociaux</h3>
+                        <p>Suivez-nous sur nos réseaux pour rester informé de nos actualités et projets</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">📘</a>
+                            <a href="#" class="social-link" title="LinkedIn">💼</a>
+                            <a href="#" class="social-link" title="Instagram">📷</a>
+                            <a href="#" class="social-link" title="YouTube">📹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-placeholder">
+                <div class="map-icon"></div>
+                <h3>Nous Trouver</h3>
+                <p>Antananarivo, Madagascar</p>
+                <p style="font-size: 1rem; margin-top: 1rem; opacity: 0.8;">Latitude: -18.8792° | Longitude: 47.5079°</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quel est le délai moyen pour obtenir un devis ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Nous nous engageons à vous fournir un devis détaillé sous 48 à 72 heures après réception de votre demande complète. Pour les projets complexes nécessitant une étude approfondie, ce délai peut s'étendre à 5-7 jours ouvrables.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Proposez-vous des visites de chantiers en cours ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolument ! Nous organisons régulièrement des visites guidées de nos chantiers en cours pour nos clients potentiels. C'est l'occasion idéale de constater la qualité de notre travail et de rencontrer nos équipes. Contactez-nous pour planifier une visite.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quelles sont vos garanties ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Nous offrons une garantie décennale sur tous nos travaux de construction, une garantie biennale sur les équipements et une garantie de parfait achèvement d'un an. Toutes nos réalisations sont couvertes par une assurance tous risques chantier.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Travaillez-vous en dehors d'Antananarivo ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Oui, nous intervenons sur l'ensemble du territoire malgache. Nous avons déjà réalisé des projets dans 15 régions différentes. Des frais de déplacement peuvent s'appliquer selon la localisation du chantier.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Puis-je financer mon projet par étapes ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Nous proposons des solutions de paiement échelonné adaptées à chaque projet. Le paiement s'effectue généralement en plusieurs tranches liées à l'avancement des travaux. Nous travaillons également avec plusieurs institutions financières partenaires.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Combien de temps dure un projet de construction ?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            La durée varie selon la complexité et la taille du projet. Une maison individuelle standard prend environ 8-12 mois, un immeuble résidentiel 18-24 mois, et un complexe commercial 20-30 mois. Un planning précis est établi lors de la signature du contrat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Une Urgence ? Besoin d'un Conseil Rapide ?</h2>
+            <p>Notre équipe est disponible pour répondre à vos questions</p>
+            <a href="tel:+261341234567" class="cta-button"><i class="fa fa-phone-alt" aria-hidden="true"></i> Appelez-nous maintenant</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fa fa-phone-alt" aria-hidden="true"></i> +261 34 XX XXX XX</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> contact@partenariat-btp.mg</p>
+                <p><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Antananarivo, Madagascar</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <a href="index.html">Accueil</a>
+                <a href="apropos.html">À propos</a>
+                <a href="domaines.html">Domaines</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="offres.html">Offres</a>
+            </div>
+            <div class="footer-section">
+                <h4>Nos Services</h4>
+                <a href="#">Étude & Construction</a>
+                <a href="#">Contrôle & Suivi</a>
+                <a href="#">Conseil & Réalisation</a>
+                <a href="#">Gestion de Projets</a>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi - Vendredi: 8h - 17h</p>
+                <p>Samedi: 8h - 12h</p>
+                <p>Dimanche: Fermé</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Partenariat BTP. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="./asset/js/contact.js"></script>
+</body>
+</html>

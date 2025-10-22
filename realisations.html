@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Réalisations - Partenariat BTP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/realisation.css">
+    <link rel="stylesheet" href="./asset/fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logos">
+                <div class="logo-box"><img src="./asset/images/logo1.jpg" alt=""></div>
+                <div class="logo-separator"></div>
+                <div class="logo-box"><img src="./asset/images/logo2.jpg" alt=""></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="domaines.html">Domaines</a></li>
+                    <li><a href="realisations.html" class="active">Réalisations</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Nos Réalisations</h1>
+            <p>Plus de 20 ans d'excellence en construction et ingénierie</p>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Projets Livrés</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">250K+</span>
+                <span class="stat-label">m² Construits</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfaction Client</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Régions Couvertes</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio de Projets</h2>
+                <p class="section-subtitle">Découvrez notre expertise à travers nos réalisations majeures</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="tous">Tous les projets</button>
+                <button class="filter-btn" data-filter="batiment">Bâtiments</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructures</button>
+                <button class="filter-btn" data-filter="residentiel">Résidentiel</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="project-icon">🏢</div>
+                        <span class="project-badge">Commercial</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Résidence Les Jacarandas</h3>
+                        <div class="project-meta">
+                            <span>📍 Ivandry</span>
+                            <span>📅 2024</span>
+                            <span>📐 8 500 m²</span>
+                        </div>
+                        <p class="project-description">
+                            50 appartements standing avec espaces verts aménagés, piscine, salle de sport et sécurité 24h/24. Design moderne privilégiant luminosité et confort.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 20 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-category="batiment">
+                    <div class="project-image">
+                        <div class="project-icon">🏛️</div>
+                        <span class="project-badge">Public</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Campus Universitaire Ankatso</h3>
+                        <div class="project-meta">
+                            <span>📍 Ankatso</span>
+                            <span>📅 2023</span>
+                            <span>📐 22 000 m²</span>
+                        </div>
+                        <p class="project-description">
+                            Infrastructure éducative moderne avec amphithéâtres, salles de cours, laboratoires scientifiques et bibliothèque. Capacité de 3000 étudiants.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 30 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="project-icon">🏨</div>
+                        <span class="project-badge">Hôtellerie</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Hôtel Le Palissandre</h3>
+                        <div class="project-meta">
+                            <span>📍 Tana Water Front</span>
+                            <span>📅 2022</span>
+                            <span>📐 12 000 m²</span>
+                        </div>
+                        <p class="project-description">
+                            Hôtel 4 étoiles avec 120 chambres, restaurant panoramique, spa wellness et centre de conférences. Alliance parfaite entre modernité et tradition malgache.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 22 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card" data-category="batiment">
+                    <div class="project-image">
+                        <div class="project-icon">🏭</div>
+                        <span class="project-badge">Industriel</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Zone Industrielle Forello</h3>
+                        <div class="project-meta">
+                            <span>📍 Forello</span>
+                            <span>📅 2023</span>
+                            <span>📐 18 000 m²</span>
+                        </div>
+                        <p class="project-description">
+                            Complexe industriel avec entrepôts automatisés, zones de production et bureaux. Infrastructure logistique optimisée pour l'industrie moderne.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 16 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 7 -->
+                <div class="project-card" data-category="residentiel">
+                    <div class="project-image">
+                        <div class="project-icon">🏡</div>
+                        <span class="project-badge">Villas</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Lotissement Ambatobe Hills</h3>
+                        <div class="project-meta">
+                            <span>📍 Ambatobe</span>
+                            <span>📅 2024</span>
+                            <span>📐 25 000 m²</span>
+                        </div>
+                        <p class="project-description">
+                            35 villas individuelles haut de gamme dans un environnement sécurisé. Design personnalisé, jardins privatifs et vues panoramiques exceptionnelles.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 28 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 8 -->
+                <div class="project-card" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-icon">🛣️</div>
+                        <span class="project-badge">Routes</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Rocade d'Ivato</h3>
+                        <div class="project-meta">
+                            <span>📍 Ivato</span>
+                            <span>📅 2023</span>
+                            <span>📐 8.5 km</span>
+                        </div>
+                        <p class="project-description">
+                            Voie express moderne à 4 voies reliant l'aéroport au centre-ville. Éclairage LED intelligent, signalisation digitale et pistes cyclables intégrées.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 14 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 9 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="project-icon">🏬</div>
+                        <span class="project-badge">Bureaux</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Tour Ankorondrano Business</h3>
+                        <div class="project-meta">
+                            <span>📍 Ankorondrano</span>
+                            <span>📅 2024</span>
+                            <span>📐 9 000 m²</span>
+                        </div>
+                        <p class="project-description">
+                            Immeuble de bureaux premium de 12 étages. Espaces modulables, climatisation centralisée, parkings souterrains et certification environnementale.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-duration">⏱ 26 mois</span>
+                            <a href="#" class="project-link">Voir détails →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-section">
+        <div class="carousel-wrapper">
+            <div class="carousel-header">
+                <h2>Projets Phares en Images</h2>
+                <p>Découvrez nos réalisations les plus emblématiques</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🏢</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Centre Commercial Panorama</h3>
+                            <p>15 000 m² | Antananarivo | 2024 - Complexe commercial moderne qui redéfinit l'expérience shopping avec 80 boutiques réparties sur 5 niveaux, incluant restaurants, cinémas et espaces de loisirs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🌉</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Pont Ikopa Express</h3>
+                            <p>450 m | Antananarivo | 2023 - Infrastructure majeure facilitant la mobilité urbaine avec 4 voies de circulation, éclairage intelligent et capacité de 50 000 véhicules/jour.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🏘️</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Résidence Les Jacarandas</h3>
+                            <p>50 logements | Ivandry | 2024 - Excellence résidentielle offrant confort haut de gamme avec espaces verts de 2 000 m², piscine olympique, fitness center et sécurité 24/7.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🏛️</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Campus Universitaire d'Ankatso</h3>
+                            <p>22 000 m² | Ankatso | 2023 - Infrastructure éducative moderne accueillant 3 000 étudiants avec 12 amphithéâtres, 40 salles de cours, laboratoires de recherche et bibliothèque numérique.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🏨</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Hôtel Le Palissandre</h3>
+                            <p>120 chambres | Tana Water Front | 2022 - Luxe et hospitalité à la malgache avec restaurant panoramique, spa wellness premium et centre de conférences pouvant accueillir 500 personnes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-slide">
+                        <div class="slide-image">
+                            <div class="slide-icon">🏭</div>
+                        </div>
+                        <div class="slide-caption">
+                            <h3>Zone Industrielle Forello</h3>
+                            <p>18 000 m² | Forello | 2023 - Complexe industriel de pointe optimisé pour la production et la logistique avec systèmes automatisés et infrastructure énergétique durable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Slide précédent">‹</button>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Slide suivant">›</button>
+                </div>
+            </div>
+
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Vous Avez un Projet en Tête ?</h2>
+            <p>Contactez nos experts pour transformer votre vision en réalité</p>
+            <a href="contact.html" class="cta-button">Demander une Étude Gratuite</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fa fa-phone-alt" aria-hidden="true"></i> +261 34 XX XXX XX</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> contact@partenariat-btp.mg</p>
+                <p><i class="fa fa-map-marker-alt" aria-hidden="true"></i> Antananarivo, Madagascar</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <a href="index.html">Accueil</a>
+                <a href="apropos.html">À propos</a>
+                <a href="domaines.html">Domaines</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="offres.html">Offres</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <a href="#">Étude & Construction</a>
+                <a href="#">Contrôle & Suivi</a>
+                <a href="#">Conseil & Réalisation</a>
+                <a href="#">Gestion de Projets</a>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi - Vendredi: 8h - 17h</p>
+                <p>Samedi: 8h - 12h</p>
+                <p>Dimanche: Fermé</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Partenariat BTP. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="./asset/js/realisation.js"></script>
+</body>
+</html>
